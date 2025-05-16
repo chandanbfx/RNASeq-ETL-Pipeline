@@ -117,6 +117,7 @@ The rule `upload_s3.smk` uploads final results to your specified S3 bucket.
 aws s3 sync results/ s3://your-s3-bucket/results/
 ```
 Note: Ensure you have appropriate access and permissions to the specified S3 bucket (read/write) before running the upload step.
+
 ---
 
 ## Modular Snakemake Rules
