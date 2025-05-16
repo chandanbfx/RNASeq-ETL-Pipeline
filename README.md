@@ -9,7 +9,7 @@ A modular and reproducible ETL (Extract-Transform-Load) pipeline for RNA-Seq dat
 **ETL-RNASeq** automates the full RNA-seq data lifecycle:
 
 - **Extract**: Download public RNA-seq datasets from NCBI GEO/SRA
-- **Transform**: Preprocess via QC, trimming, alignment, quantification
+- **Transform**: Preprocess via QC, trimming, alignment, and quantification
 - **Load**: Upload final outputs (counts, BAM files) to an S3 bucket
 
 Built using Snakemake for reproducibility and scalability, this pipeline is suitable for batch processing on both local and cloud environments.
@@ -67,10 +67,10 @@ ETL-RNASeq/
 - [Snakemake](https://snakemake.readthedocs.io)
 - [AWS CLI](https://aws.amazon.com/cli/)
 - [SRA Toolkit](https://github.com/ncbi/sra-tools)
-- MultiQC
-- HISAT2
-- featureCounts
-- Python 3.8+
+- [MultiQC](https://seqera.io/multiqc/)
+- [HISAT2](https://daehwankimlab.github.io/hisat2/)
+- [featureCounts](https://subread.sourceforge.net/featureCounts.html)
+- [Python 3.8+](https://www.python.org/downloads/release/python-380/)
 - Conda (recommended)
 
 ---
@@ -144,14 +144,6 @@ Each module uses its own environment defined in `envs/`. Snakemake ensures repro
 ```bash
 --use-conda
 ```
-
----
-
-## To Do
-
-- Add support for paired-end/single-end auto-detection
-- Integrate MultiQC reports
-- Add Nextflow support (optional)
 
 ---
 
