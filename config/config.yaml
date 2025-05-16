@@ -1,0 +1,9 @@
+samples: ["SRR11683995", "SRR11683994"]  
+sra_ids:
+  SRR11683995: "SRR11683995"  # Example SRA IDs (replace with desired ones)
+  SRR11683994: "SRR11683994"
+genome_index: "resources/genomes/grch38/genome"  # HISAT2 index prefix
+gtf: "resources/annotations/genes.gtf"
+project_id: "ETL_test"
+
+
