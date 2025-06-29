@@ -1,0 +1,6 @@
+name: genome_index
+channels:
+  - bioconda
+dependencies:
+  - hisat2=2.2.1
+  - wget
